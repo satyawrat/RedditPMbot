@@ -10,7 +10,7 @@ from selenium.webdriver.common.keys import Keys
 with open('Nootropics.htm', 'r') as myfile:
     data=myfile.read().replace('\n', '')
 
-userlist = re.findall(r"username=\"(\w+.\w+)", data)
+userlist = re.findall(r"\"(\w+.\w+)", data)
 
 print len(userlist)
 
